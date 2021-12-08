@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ScoreUpdate : MonoBehaviour
+{
+    public static int keys;
+    public GameObject keyText;
+    // Start is called before the first frame update
+    void Update()
+    {
+           
+            keyText.GetComponent<Text>().text = "Keys: " + keys + "/4";
+
+            
+            
+    }
+}
