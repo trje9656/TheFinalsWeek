@@ -37,7 +37,10 @@ public class FieldOfView : MonoBehaviour
         
         while (true)
         {
+            
             yield return wait;
+
+            print("running");
             FieldOfViewCheck();
         }
     }
@@ -45,7 +48,7 @@ public class FieldOfView : MonoBehaviour
     private void FieldOfViewCheck()
     {
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
-
+        print("printing" + rangeChecks);
         if(rangeChecks.Length != 0)
         {
             Transform target = rangeChecks[0].transform;
@@ -57,6 +60,7 @@ public class FieldOfView : MonoBehaviour
 
                 if(!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                 {
+                    print("proc");
                     canSeePlayer = true;
                 }
                 else
