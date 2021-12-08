@@ -17,4 +17,15 @@ public class PlayerManager : MonoBehaviour
     #endregion
 
     public GameObject player;
+    public PlayerMovement movement;
+
+    void OnCollisionEnter(Collision collisionInfo) 
+    {
+        if (collisionInfo.collider.tag == "Zombie") 
+        {
+            movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
+
 }
