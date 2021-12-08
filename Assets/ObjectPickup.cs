@@ -7,8 +7,7 @@ public class ObjectPickup : MonoBehaviour
 {
     public GameObject theEnemy;
 
-    bool secondspawn = false;
-    bool thirdspawn = false;
+    
 
 
     // Start is called before the first frame update
@@ -21,15 +20,15 @@ public class ObjectPickup : MonoBehaviour
             print("destroyed");
         }
 
-        if (ScoreUpdate.keys == 2 && !secondspawn)
+        if (ScoreUpdate.keys == 2 && !ScoreUpdate.secondspawn)
         {
-            Instantiate(theEnemy, new Vector3(4, -0.5f, 4), Quaternion.identity);
-            secondspawn = true;
+            Instantiate(theEnemy, new Vector3(8, 0, 22), Quaternion.Euler(0f, 90f, 0f) );
+            ScoreUpdate.secondspawn = true;
         }
-        if (ScoreUpdate.keys == 3 && !thirdspawn)
+        if (ScoreUpdate.keys == 3 && !ScoreUpdate.thirdspawn)
         {
-            Instantiate(theEnemy, new Vector3(0, -0.5f, 4), Quaternion.identity);
-            thirdspawn = true;
+            Instantiate(theEnemy, new Vector3(-7, 0, -41), Quaternion.identity);
+            ScoreUpdate.thirdspawn = true;
         }
 
     }
