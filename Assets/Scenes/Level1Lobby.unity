@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003997864, g: 0.00021806106, b: 0.000000051625232, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3464,11 +3464,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightSource: {fileID: 523662444}
   failSafe: 0
---- !u!4 &358543123 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-  m_PrefabInstance: {fileID: 121745508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &360599955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,6 +4991,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 469760, guid: 94e472da99198764cb9d172d651d1b5c, type: 3}
   m_PrefabInstance: {fileID: 541935730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &552990396 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4459864851310106429, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 121745508}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &572797518
 GameObject:
@@ -10681,7 +10681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1026474379
 Light:
   m_ObjectHideFlags: 0
@@ -17043,13 +17043,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648242029}
   m_LocalRotation: {x: 0.03021591, y: -0.6708111, z: -0.7407523, w: -0.0196351}
-  m_LocalPosition: {x: 0.44046497, y: 0.46500015, z: 0.82574177}
+  m_LocalPosition: {x: 0.44046497, y: -0.28499985, z: 0.82574177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1815709904}
   - {fileID: 393867872}
   - {fileID: 523662445}
-  m_Father: {fileID: 358543123}
+  m_Father: {fileID: 552990396}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -84.266, y: -10.625, z: -173.42}
 --- !u!1001 &1648705290
@@ -19497,10 +19497,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.4
-  m_Height: 3.5
+  m_Radius: 1.3803544
+  m_Height: 4.244597
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: -0.00873816, y: 2.3722985, z: -1.3154448e-17}
 --- !u!195 &1880224249
 NavMeshAgent:
   m_ObjectHideFlags: 0
