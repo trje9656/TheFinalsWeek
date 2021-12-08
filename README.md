@@ -30,9 +30,16 @@ https://assetstore.unity.com/packages/audio/sound-fx/minimal-ui-sounds-78266
 https://assetstore.unity.com/packages/3d/characters/modular-first-person-controller-189884
 https://assetstore.unity.com/publishers/4986
 https://assetstore.unity.com/packages/2d/textures-materials/wood/15-original-wood-texture-71286
+https://assetstore.unity.com/packages/3d/true-horror-crawler-70609
+https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232
+
 
 
 
 https://www.youtube.com/watch?v=D0lx90n0s-4
 
 https://www.youtube.com/watch?v=BTxqErZ1JqE used for toggle key
+
+https://www.youtube.com/watch?v=j1-OyLo77ss referenced for enemy field of view calculation
+
+
