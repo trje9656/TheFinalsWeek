@@ -12,6 +12,14 @@ John Wilson
 built on unity 2020.3.22f1
 
 
+instructions to run: 
+
+If unity editor is installed, then open the project in unity editor and click the play button on the top of the editor
+Otherwise, a windows executable will be included to start the program
+
+
+
+
 
 External Sources:
 https://assetstore.unity.com/packages/3d/props/barprops-137130
