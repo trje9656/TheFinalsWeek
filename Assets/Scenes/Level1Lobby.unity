@@ -1640,11 +1640,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
---- !u!1 &121745509 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4459864851310106424, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-  m_PrefabInstance: {fileID: 121745508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &122538611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2023,7 +2018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 380184547}
   background: {fileID: 1922291352}
-  control: {fileID: 121745509}
+  control: {fileID: 358543117}
 --- !u!114 &154649584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4825,6 +4820,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footStep: {fileID: 358543119}
+--- !u!114 &358543122 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 121745508}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358543117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ba6530d9bfda47abb4610956b2f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &358543125
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4921,6 +4927,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &358543128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358543117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea0b79b1e4bcb8419723f1fa87ab52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 358543122}
 --- !u!1 &360038359
 GameObject:
   m_ObjectHideFlags: 0
@@ -20270,6 +20289,7 @@ GameObject:
   - component: {fileID: 1480447559}
   - component: {fileID: 1480447558}
   - component: {fileID: 1480447560}
+  - component: {fileID: 1480447561}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -20290,6 +20310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 358543117}
+  movement: {fileID: 0}
 --- !u!4 &1480447559
 Transform:
   m_ObjectHideFlags: 0
@@ -20314,6 +20335,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c714860aa5eb4340b0b539d8cc36900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1480447561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480447557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442e078e52d3a1842a352562a91873ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1481728749
@@ -24451,6 +24484,10 @@ PrefabInstance:
     - target: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_Name
       value: Zombie1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
+      propertyPath: m_TagString
+      value: Zombie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
