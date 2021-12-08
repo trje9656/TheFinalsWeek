@@ -13,6 +13,7 @@ public class ObjectPickup : MonoBehaviour
         {
             ScoreUpdate.keys += 1;
             Destroy(gameObject);
+            print("destroyed");
         }
             
     }

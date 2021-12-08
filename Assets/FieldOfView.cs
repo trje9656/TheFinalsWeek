@@ -37,7 +37,9 @@ public class FieldOfView : MonoBehaviour
         
         while (true)
         {
+            
             yield return wait;
+            
             FieldOfViewCheck();
         }
     }
