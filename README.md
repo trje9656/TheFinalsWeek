@@ -18,7 +18,7 @@ If unity editor is installed, then open the project in unity editor and click th
 Otherwise, a windows executable will be included to start the program
 
 Patterns used:
-Singleton
+Singleton - PlayerManager.cs
 
 
 WASD:movement  
