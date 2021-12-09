@@ -17,6 +17,8 @@ instructions to run:
 If unity editor is installed, then open the project in unity editor and click the play button on the top of the editor
 Otherwise, a windows executable will be included to start the program
 
+Patterns used:
+Singleton
 
 
 WASD:movement  
