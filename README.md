@@ -18,7 +18,12 @@ If unity editor is installed, then open the project in unity editor and click th
 Otherwise, a windows executable will be included to start the program
 
 
-
+controls:
+WASD - movement
+F - flashlight
+ESC - pause
+Shift - Run
+C - crouch
 
 
 External Sources:
