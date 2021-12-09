@@ -6,9 +6,8 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool isGamePause = false;
 
-    [SerializeField] GameObject pauseMenu;
-    [SerializeField] GameObject background;
-    [SerializeField] GameObject control;
+    public GameObject background;
+    
 
     void Update()
     {
@@ -35,18 +34,16 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame() 
     {
-        pauseMenu.SetActive(false);
+       
         background.SetActive(false);
-        control.SetActive(true);
         Time.timeScale = 1f;
         isGamePause = false;
     }
 
     public void PauseGame() 
     {
-        pauseMenu.SetActive(true);
+        
         background.SetActive(true);
-        control.SetActive(false);
         Time.timeScale = 0f;
         isGamePause = true;
     }
@@ -54,7 +51,7 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame() 
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        
         Debug.Log("Quit");
     }
 
