@@ -19,6 +19,7 @@ Otherwise, a windows executable will be included to start the program
 
 Patterns used:
 Singleton - PlayerManager.cs
+Facade - Our ScoreUpdate.cs file manages the incrementing of the score on the surface, but it actually controls the display of the win screen and win condition class. 
 
 
 WASD:movement  
