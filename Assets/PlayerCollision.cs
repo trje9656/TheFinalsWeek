@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public FirstPersonController movement;
 
-    void OnCollisionEnter(Collision collisioninfo) 
+    void OnTriggerEnter(Collider collider)
     {
-        if (collisioninfo.collider.tag == "Zombie") 
+        if (collider.gameObject.tag == "Player")
         {
-            movement.enabled = false;
+            ScoreUpdate.keys += 1;
             FindObjectOfType<GameManager>().EndGame();
+
         }
+
+
+
     }
 }
