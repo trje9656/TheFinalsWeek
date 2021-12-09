@@ -19,6 +19,11 @@ Otherwise, a windows executable will be included to start the program
 
 
 
+WASD:movement  
+F:flashlight  
+ESC:pause  
+Shift:Run  
+C:crouch  
 
 
 External Sources:
