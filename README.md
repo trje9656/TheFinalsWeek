@@ -18,8 +18,11 @@ If unity editor is installed, then open the project in unity editor and click th
 Otherwise, a windows executable will be included to start the program
 
 Patterns used:
-Singleton - PlayerManager.cs
+Singleton - PlayerManager.cs  
 Facade - Our ScoreUpdate.cs file manages the incrementing of the score on the surface, but it actually controls the display of the win screen and win condition class. 
+Decorator - We have a base key type, and then a normal and jumpscare key. We also have a base jumpscare type, and then a crawling jumpscare and a hall jumpscare.
+
+(We are aware that these implementations arnt textbook implementations of the patterns, but it is to be noted that we believe they still maintain the original purposes of the patterns themselves)
 
 Known bugs:
 If you run while attempting to pick up a key, the pick up will not register. 
