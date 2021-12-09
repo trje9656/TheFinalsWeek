@@ -1,6 +1,6 @@
 TheFinalsWeek
 
-Executable File Download (Was too big for Github): https://drive.google.com/drive/folders/1RZnNCrwFrAD4Qz7Wp49Dn8UNa0pq4SlI?usp=sharing
+Executable File Download AND video presentation(Was too big for Github): https://drive.google.com/drive/folders/1RZnNCrwFrAD4Qz7Wp49Dn8UNa0pq4SlI?usp=sharing
 Team:
 
 Isabelle Brandes
@@ -21,6 +21,8 @@ Patterns used:
 Singleton - PlayerManager.cs
 Facade - Our ScoreUpdate.cs file manages the incrementing of the score on the surface, but it actually controls the display of the win screen and win condition class. 
 
+Known bugs:
+If you run while attempting to pick up a key, the pick up will not register. 
 
 WASD:movement  
 F:flashlight  
@@ -45,9 +47,7 @@ https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232
 
 
 https://www.youtube.com/watch?v=D0lx90n0s-4
-
 https://www.youtube.com/watch?v=BTxqErZ1JqE used for toggle key
-
 https://www.youtube.com/watch?v=j1-OyLo77ss referenced for enemy field of view calculation
 
 
