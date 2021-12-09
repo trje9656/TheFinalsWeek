@@ -9,7 +9,7 @@ public class PlayerCollision : MonoBehaviour
     void Update()
     {
         
-
+        //if q is pressed
         if (Input.GetKeyDown(KeyCode.Q))
         {
             QuitGame();
@@ -18,6 +18,7 @@ public class PlayerCollision : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider)
     {
+        //if coliding with monster
         if (collider.gameObject.tag == "Player")
         {
             ScoreUpdate.keys += 1;

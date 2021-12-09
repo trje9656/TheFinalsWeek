@@ -17,8 +17,10 @@ public class FlashLightMech : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //players presses f
         if(Input.GetButtonDown("Fkey"))
         {
+            //if not on, turns on and prevents spamming
             if (!isOn && !failSafe)
             {
                 failSafe = true;
@@ -27,6 +29,7 @@ public class FlashLightMech : MonoBehaviour
                 isOn = true;
                 StartCoroutine(FailSafe());
             }
+            //if on, turns off and prevents spamming
             if (isOn && !failSafe)
             {
                 failSafe = true;

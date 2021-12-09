@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class keyscare : MonoBehaviour
 {
-
+    //all the blood images
     public GameObject jumpscareObject1;
     public GameObject jumpscareObject2;
     public GameObject jumpscareObject3;
@@ -17,7 +17,7 @@ public class keyscare : MonoBehaviour
 
     void Start()
     {
-
+        //despawns them upon game start
         jumpscareObject1.SetActive(false);
         jumpscareObject2.SetActive(false);
         jumpscareObject3.SetActive(false);
@@ -33,6 +33,7 @@ public class keyscare : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+        //spawns them on trigger
         if (collider.gameObject.tag == "Player")
         {
             jumpscareObject1.SetActive(true);

@@ -11,7 +11,7 @@ public class FootStepScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
+		//checks if moving
 		if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
 		{
 			IsMoving = true;
@@ -21,10 +21,12 @@ public class FootStepScript : MonoBehaviour
 			IsMoving = false;
 		}
 
+		//if moving and footsteps arnt playing play footsteps
 		if (IsMoving && !footStep.isPlaying)
 		{
 			footStep.Play();
 		}
+		//if not moving stop footsteps
 		if (!IsMoving)
 		{
 			footStep.Stop();

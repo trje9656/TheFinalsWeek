@@ -16,6 +16,7 @@ public class ScoreUpdate : MonoBehaviour
     void Update()
     {
            
+            //updating ui
             keyText.GetComponent<Text>().text = "Keys: " + keys + "/4";
 
             

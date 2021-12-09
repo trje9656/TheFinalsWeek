@@ -9,12 +9,13 @@ public class Jumpscare : MonoBehaviour
 
     void Start()
     {
-
+        //despawns jumpscare object
         jumpscareObject.SetActive(false);
     }
 
     void OnTriggerEnter(Collider player)
     {
+        //spawns on trigger and destroys trigger as to not respawn
         if (player.tag == "Player")
         {
             jumpscareObject.SetActive(true);

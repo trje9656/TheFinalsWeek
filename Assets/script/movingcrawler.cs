@@ -8,6 +8,7 @@ public class movingcrawler : MonoBehaviour
     public float speed;
     void Update()
     {
+        //moves crawler from original position to target position 
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
     }

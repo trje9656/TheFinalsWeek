@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        //if escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             if (isGamePause)
@@ -22,10 +23,12 @@ public class PauseMenu : MonoBehaviour
                 PauseGame();
             }
         }
+        //already paused and escape is pressed
         if (isGamePause && Input.GetKeyDown(KeyCode.R)) 
         {
             ResumeGame();
         }
+        //already paused and game is quit
         if (isGamePause && Input.GetKeyDown(KeyCode.Q))
         {
             QuitGame();
@@ -34,7 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame() 
     {
-       
+       //turns off background and unfreezes game
         background.SetActive(false);
         Time.timeScale = 1f;
         isGamePause = false;
@@ -42,7 +45,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame() 
     {
-        
+        //turns on background and freezes game
         background.SetActive(true);
         Time.timeScale = 0f;
         isGamePause = true;
@@ -50,6 +53,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame() 
     {
+
         Application.Quit();
         
         Debug.Log("Quit");
